@@ -257,6 +257,30 @@
 						"url": "{{base_url}}/fips"
 					},
 					"response": []
+				},
+				{
+					"name": "https://fiu-uat.setu.co/consents/webview/0aba0bb6-06f3-449b-9bac-505423b7c002",
+					"id": "b6e58323-6dee-434d-b11c-ed3f9a0f7287",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-client-secret",
+								"value": "9c2fc756-3d17-46d6-b28d-be4d71953e83",
+								"type": "text"
+							},
+							{
+								"key": "x-client-id",
+								"value": "255d0b6c-492d-44cf-8581-e9494c7b0914",
+								"type": "text"
+							}
+						],
+						"url": "https://fiu-uat.setu.co/consents/webview/0aba0bb6-06f3-449b-9bac-505423b7c002"
+					},
+					"response": []
 				}
 			],
 			"id": "16f66a9e-f148-46ed-ad25-5bbf4a546a2f"
@@ -318,44 +342,44 @@
 	],
 	"variable": [
 		{
-			"id": "d5edff1b-922c-400c-953f-196b43aaf212",
+			"id": "e856d8b2-95ed-47ab-8510-ecc4e3e31a14",
 			"key": "base_url",
 			"value": "https://fiu-uat.setu.co"
 		},
 		{
-			"id": "3867e22c-3d39-4bc0-928c-1c4b3fee3081",
+			"id": "8c0b3f89-389f-4f44-92e9-8006d23671c9",
 			"key": "mobile_number",
 			"value": "9751644338"
 		},
 		{
-			"id": "9c51b1db-c8f6-47dc-aa57-fc986e60a140",
+			"id": "9d3abbb8-e655-4136-939d-5e96bf0a3821",
 			"key": "client_id",
 			"value": "255d0b6c-492d-44cf-8581-e9494c7b0914\n"
 		},
 		{
-			"id": "ec568af2-3d2c-4d00-b5d8-21ac8f2f6bca",
+			"id": "ee3cee0e-95f5-448f-9419-44fdc6e3c14e",
 			"key": "client_secret",
 			"value": "9c2fc756-3d17-46d6-b28d-be4d71953e83"
 		},
 		{
-			"id": "b4f5a9fe-0632-40f2-9468-e7797ce57d2a",
+			"id": "2e61cc7d-7ae7-489e-a868-b14728f8d1d8",
 			"key": "consent_request_id",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "b4037c0c-6759-41b3-b571-33949ca50341",
+			"id": "627647da-baec-44ff-b671-d4c0fae80182",
 			"key": "fi_data_request_id",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "abb1b2bc-a93e-4c61-af2e-cf707648e144",
+			"id": "58e997a9-bb62-47fb-b4cc-df973271d9da",
 			"key": "consent_request_id",
 			"value": ""
 		},
 		{
-			"id": "b9b8a069-0222-4eaf-9f39-4cc1e5807db5",
+			"id": "97a8028f-984b-4882-bb5c-9afbc901883f",
 			"key": "fi_data_request_id",
 			"value": ""
 		}
