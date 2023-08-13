@@ -35,7 +35,7 @@
 							}
 						}
 					],
-					"_postman_id": "a0b91c47-1220-434d-b197-2ea9774bed21",
+					"id": "a0b91c47-1220-434d-b197-2ea9774bed21",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -93,7 +93,7 @@
 							}
 						}
 					],
-					"_postman_id": "10762a51-b650-42a5-a402-a01325a201f8",
+					"id": "10762a51-b650-42a5-a402-a01325a201f8",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -124,8 +124,7 @@
 								{
 									"id": "bd8c326e-20be-405a-be50-6fce1fe0153e",
 									"key": "id",
-									"value": "{{consent_request_id}}",
-									"type": "string"
+									"value": "{{consent_request_id}}"
 								}
 							]
 						},
@@ -134,7 +133,7 @@
 					"response": []
 				}
 			],
-			"_postman_id": "1744ffbd-bcca-4b44-b361-cd38027732bb"
+			"id": "1744ffbd-bcca-4b44-b361-cd38027732bb"
 		},
 		{
 			"name": "Data session APIs",
@@ -156,7 +155,7 @@
 							}
 						}
 					],
-					"_postman_id": "45938220-5905-44e2-9acc-7182b558297f",
+					"id": "45938220-5905-44e2-9acc-7182b558297f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -190,7 +189,7 @@
 				},
 				{
 					"name": "Get data",
-					"_postman_id": "faaa7831-9185-44bb-9031-295612bfe30c",
+					"id": "faaa7831-9185-44bb-9031-295612bfe30c",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -221,8 +220,7 @@
 								{
 									"id": "dfc7985b-9e21-4886-9d1b-29a2ba9c9dc0",
 									"key": "id",
-									"value": "{{fi_data_request_id}}",
-									"type": "string"
+									"value": "{{fi_data_request_id}}"
 								}
 							]
 						},
@@ -231,14 +229,14 @@
 					"response": []
 				}
 			],
-			"_postman_id": "f83e750c-bc5e-4e55-9b00-ad4571d9eee6"
+			"id": "f83e750c-bc5e-4e55-9b00-ad4571d9eee6"
 		},
 		{
 			"name": "FIU Data",
 			"item": [
 				{
 					"name": "Get FIPs List",
-					"_postman_id": "32f26047-6945-4caf-9eba-fd670809365f",
+					"id": "32f26047-6945-4caf-9eba-fd670809365f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -261,7 +259,39 @@
 					"response": []
 				}
 			],
-			"_postman_id": "16f66a9e-f148-46ed-ad25-5bbf4a546a2f"
+			"id": "16f66a9e-f148-46ed-ad25-5bbf4a546a2f"
+		},
+		{
+			"name": "https://fiu-uat.setu.co/consents",
+			"id": "2829d955-f454-4387-bcd2-ab1d5f46aa3a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "post",
+				"header": [
+					{
+						"key": "x-client-id",
+						"value": "255d0b6c-492d-44cf-8581-e9494c7b0914"
+					},
+					{
+						"key": "x-client-secret",
+						"value": "9c2fc756-3d17-46d6-b28d-be4d71953e83"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"type": "text",
+							"key": "{\n \t\"Detail\": {\n \t \t\"consentStart\": \"2024-02-14T11:28:06.983Z\",\n \t \t\"consentExpiry\": \"2025-04-23T05:44:53.822Z\",\n \t \t\"Customer\": {\n \t \t \t\"id\": \"9999999999@onemoney\"\n \t \t},\n \t \t\"FIDataRange\": {\n \t \t \t\"from\": \"2020-04-01T00:00:00Z\",\n \t \t \t\"to\": \"2023-01-01T00:00:00Z\"\n \t \t},\n \t \t\"consentMode\": \"STORE\",\n \t \t\"consentTypes\": [\n \t \t \t\"TRANSACTIONS\",\n \t \t \t\"PROFILE\",\n \t \t \t\"SUMMARY\"\n \t \t],\n \t \t\"fetchType\": \"PERIODIC\",\n \t \t\"Frequency\": {\n \t \t \t\"value\": 30,\n \t \t \t\"unit\": \"MONTH\"\n \t \t},\n \t \t\"DataFilter\": [\n \t \t \t{\n \t \t \t \t\"type\": \"TRANSACTIONAMOUNT\",\n \t \t \t \t\"value\": \"5000\",\n \t \t \t \t\"operator\": \">",
+							"value": "\"\n \t \t \t}\n \t \t],\n \t \t\"DataLife\": {\n \t \t \t\"value\": 1,\n \t \t \t\"unit\": \"MONTH\"\n \t \t},\n \t \t\"DataConsumer\": {\n \t \t \t\"id\": \"setu-fiu-id\"\n \t \t},\n \t \t\"Purpose\": {\n \t \t \t\"Category\": {\n \t \t \t \t\"type\": \"string\"\n \t \t \t},\n \t \t \t\"code\": \"101\",\n \t \t \t\"text\": \"Loan underwriting\",\n \t \t \t\"refUri\": \"https://api.rebit.org.in/aa/purpose/101.xml\"\n \t \t},\n \t \t\"fiTypes\": [\n \t \t \t\"DEPOSIT\",\n \t \t \t\"EQUITIES\"\n \t \t]\n \t},\n \t\"redirectUrl\": \"https://setu.co\",\n \t\"context\": [\n \t \t{\n \t \t \t\"key\": \"accounttype\",\n \t \t \t\"value\": \"somevalue\"\n \t \t}\n \t]\n}"
+						}
+					]
+				},
+				"url": "https://fiu-uat.setu.co/consents"
+			},
+			"response": []
 		}
 	],
 	"event": [
@@ -288,54 +318,46 @@
 	],
 	"variable": [
 		{
-			"id": "26c7a96f-5908-4419-bd53-f0123f3b7468",
+			"id": "884e0e22-a3fb-496c-b88a-bb154516ec0c",
 			"key": "base_url",
-			"value": "https://fiu-uat.setu.co",
-			"type": "string"
+			"value": "https://fiu-uat.setu.co"
 		},
 		{
-			"id": "5b1c1420-d9db-4218-b5b3-2bcc7da14863",
+			"id": "f1f6163d-92c8-4dab-a3a0-d980e23f2bb7",
 			"key": "mobile_number",
-			"value": "9751644338",
-			"type": "string"
+			"value": "9751644338"
 		},
 		{
-			"id": "4512b77e-3ef7-4ecb-be8b-ae90edc60248",
+			"id": "773a881f-2c28-4eb7-8b93-7206c55da1d1",
 			"key": "client_id",
-			"value": "255d0b6c-492d-44cf-8581-e9494c7b0914\n",
-			"type": "string"
+			"value": "255d0b6c-492d-44cf-8581-e9494c7b0914\n"
 		},
 		{
-			"id": "b2a186a3-41bd-49a9-92c4-fbd27cce6115",
+			"id": "9973e2ac-23c2-4943-b8a1-d5f98cc0a751",
 			"key": "client_secret",
-			"value": "9c2fc756-3d17-46d6-b28d-be4d71953e83",
-			"type": "string"
+			"value": "9c2fc756-3d17-46d6-b28d-be4d71953e83"
 		},
 		{
-			"id": "0e8f4c1c-d71e-4403-ac8f-6b64cc82c0be",
+			"id": "dcfa3819-f844-4cbd-988b-b710f62afac3",
 			"key": "consent_request_id",
 			"value": "",
-			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "54cc280c-3bad-4760-a8f3-f01e55c9ae1d",
+			"id": "cd541055-a4d5-4f94-9c62-314dae407d97",
 			"key": "fi_data_request_id",
 			"value": "",
-			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "281b5d6c-720c-48fd-b124-ada84f7f13dd",
+			"id": "18b2cf34-aa5a-430a-a41e-85d63d5a345a",
 			"key": "consent_request_id",
-			"value": "",
-			"type": "string"
+			"value": ""
 		},
 		{
-			"id": "947a1708-8856-4700-80cb-8fb064b697ce",
+			"id": "2f743fbc-d9ac-447d-8817-4af49c97fe56",
 			"key": "fi_data_request_id",
-			"value": "",
-			"type": "string"
+			"value": ""
 		}
 	]
 }
