@@ -198,12 +198,12 @@
 						"header": [
 							{
 								"key": "x-client-id",
-								"value": "{{client_id}}",
+								"value": "255d0b6c-492d-44cf-8581-e9494c7b0914",
 								"type": "text"
 							},
 							{
 								"key": "x-client-secret",
-								"value": "{{client_secret}}",
+								"value": "9c2fc756-3d17-46d6-b28d-be4d71953e83",
 								"type": "text"
 							}
 						],
@@ -218,9 +218,8 @@
 							],
 							"variable": [
 								{
-									"id": "dfc7985b-9e21-4886-9d1b-29a2ba9c9dc0",
 									"key": "id",
-									"value": "{{fi_data_request_id}}"
+									"value": "97ac1f0c-26bb-47b0-a05d-0c95581870ad"
 								}
 							]
 						},
@@ -355,44 +354,44 @@
 	],
 	"variable": [
 		{
-			"id": "13af9764-ffcb-4176-b009-8a95f47c7b64",
+			"id": "f579721d-ec9b-4384-b83c-635dbd057dd8",
 			"key": "base_url",
 			"value": "https://fiu-uat.setu.co"
 		},
 		{
-			"id": "ca5ab912-e89d-40fa-bf6f-dd8d6dd4bd62",
+			"id": "dcabf846-d631-4cc9-a1a6-93fc1c20dcfe",
 			"key": "mobile_number",
 			"value": "9751644338"
 		},
 		{
-			"id": "4651066a-8df3-4911-9980-b9490b168d8f",
+			"id": "ff101562-6ab5-4a80-abca-99f70705d4a7",
 			"key": "client_id",
 			"value": "255d0b6c-492d-44cf-8581-e9494c7b0914\n"
 		},
 		{
-			"id": "e7f73626-6a77-4d35-b371-401870fd3f2a",
+			"id": "f39f3506-dca0-450e-8cdc-21e24dbf1ba2",
 			"key": "client_secret",
 			"value": "9c2fc756-3d17-46d6-b28d-be4d71953e83"
 		},
 		{
-			"id": "b130461e-f375-4bcc-97de-a22d1b99838f",
+			"id": "dd40785c-1cfb-4a7d-9180-13f96c6706ba",
 			"key": "consent_request_id",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "36628436-b6dd-4fc9-9987-a31f500d6021",
+			"id": "308e5377-4a8c-44b2-8253-61abc8b934c9",
 			"key": "fi_data_request_id",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "a9f4e751-a6f5-4b53-a31d-000fda362f6f",
+			"id": "4eccc951-14d2-4a14-a4b8-5f27b805e2b6",
 			"key": "consent_request_id",
 			"value": ""
 		},
 		{
-			"id": "c6488294-617c-4d87-9d25-ed035766b565",
+			"id": "5daebcd1-ae84-4801-bbbd-b25e5a42fee4",
 			"key": "fi_data_request_id",
 			"value": ""
 		}
