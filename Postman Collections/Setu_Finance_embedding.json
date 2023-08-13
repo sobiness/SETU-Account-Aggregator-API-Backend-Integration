@@ -281,6 +281,19 @@
 						"url": "https://fiu-uat.setu.co/consents/webview/0aba0bb6-06f3-449b-9bac-505423b7c002"
 					},
 					"response": []
+				},
+				{
+					"name": "https://setu.co",
+					"id": "ed543d80-7e2e-4cb8-bb9d-09db895c45d3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://setu.co"
+					},
+					"response": []
 				}
 			],
 			"id": "16f66a9e-f148-46ed-ad25-5bbf4a546a2f"
@@ -342,44 +355,44 @@
 	],
 	"variable": [
 		{
-			"id": "e856d8b2-95ed-47ab-8510-ecc4e3e31a14",
+			"id": "13af9764-ffcb-4176-b009-8a95f47c7b64",
 			"key": "base_url",
 			"value": "https://fiu-uat.setu.co"
 		},
 		{
-			"id": "8c0b3f89-389f-4f44-92e9-8006d23671c9",
+			"id": "ca5ab912-e89d-40fa-bf6f-dd8d6dd4bd62",
 			"key": "mobile_number",
 			"value": "9751644338"
 		},
 		{
-			"id": "9d3abbb8-e655-4136-939d-5e96bf0a3821",
+			"id": "4651066a-8df3-4911-9980-b9490b168d8f",
 			"key": "client_id",
 			"value": "255d0b6c-492d-44cf-8581-e9494c7b0914\n"
 		},
 		{
-			"id": "ee3cee0e-95f5-448f-9419-44fdc6e3c14e",
+			"id": "e7f73626-6a77-4d35-b371-401870fd3f2a",
 			"key": "client_secret",
 			"value": "9c2fc756-3d17-46d6-b28d-be4d71953e83"
 		},
 		{
-			"id": "2e61cc7d-7ae7-489e-a868-b14728f8d1d8",
+			"id": "b130461e-f375-4bcc-97de-a22d1b99838f",
 			"key": "consent_request_id",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "627647da-baec-44ff-b671-d4c0fae80182",
+			"id": "36628436-b6dd-4fc9-9987-a31f500d6021",
 			"key": "fi_data_request_id",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "58e997a9-bb62-47fb-b4cc-df973271d9da",
+			"id": "a9f4e751-a6f5-4b53-a31d-000fda362f6f",
 			"key": "consent_request_id",
 			"value": ""
 		},
 		{
-			"id": "97a8028f-984b-4882-bb5c-9afbc901883f",
+			"id": "c6488294-617c-4d87-9d25-ed035766b565",
 			"key": "fi_data_request_id",
 			"value": ""
 		}
